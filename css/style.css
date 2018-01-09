@@ -1,0 +1,36 @@
+.btn, .box {
+  display: block;
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  padding: 10px;
+  background-color: #ccc; }
+
+html, body {
+  background-color: #dba73f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.box {
+  width: 380px;
+  background-color: #fff; }
+  .box .top {
+    background-image: url(https://img.rainieis.tw/pixnet/722a045a195a7dd491ced7a65e8bdc39.jpg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 330px; }
+    .box .top .tag {
+      width: 25px;
+        width-height: 50px; }
+    .box .top .circle {
+      background-color: #dba73f;
+      width: 1000px;
+      height: 50px; }

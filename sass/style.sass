@@ -1,0 +1,34 @@
+$bgcolor: #dba73f
+
+@mixin size($w,$h)
+	width: $w
+	height: $h
+@mixin btn($w,$h,$p,$bgc)
+	display: block
+	width: $w
+	height: $h
+	line-height: $h
+	padding: $p
+	background-color: $bgc
+.btn
+	+btn(100px,20px,10px,#ccc)
+html,body
+	background-color: $bgcolor
+	display: flex
+	justify-content: center
+	align-items: center
+.box
+	width: 380px
+	background-color: #fff
+	@extend .btn
+	& .top
+		background-image: url(https://img.rainieis.tw/pixnet/722a045a195a7dd491ced7a65e8bdc39.jpg)
+		background-size: cover
+		position: relative
+		+size(100%,330px)
+		& .tag
+			width: 25px
+  			height: 50px
+		& .circle
+			background-color: $bgcolor
+			+size(1000px,50px)
