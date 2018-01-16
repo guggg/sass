@@ -1,0 +1,26 @@
+@mixin size($w:50px,$h:$w)
+    width: $w
+    height: $h
+@mixin btn($bgc)
+    display: block
+    text-align: center
+    background-color: $bgc
+    transition: all 0.3s
+@mixin pd($pt,$pr:$pt,$pb:$pt,$pl:$pr)
+    padding: $pt $pr $pb $pl
+.fixed-width
+    width: 960px
+    margin: auto
+nav
+    background-color: #cccccc
+    +size(100%,60px)
+    & .logo
+        +size(60px,60px)
+        +pd(10px,20px)
+.btn
+    +btn(#ccc)
+    +size(86px,25px)
+    +pd(10px,15px,10px,10px)
+    @extend .fixed-width
+    &:hover
+        background-color: darken(#ccc, 20%) /* lighten */
